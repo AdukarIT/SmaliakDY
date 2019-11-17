@@ -1,0 +1,81 @@
+img {
+	position: relative;
+	left:35% 
+
+}
+body {
+	background: orange;
+}
+
+.menu {
+	display: inline-block;
+	width: 20%;
+	position: relative;
+}
+
+.submenu {
+	position: absolute;
+}
+
+
+li ul {
+	display: none;
+	position: relative;
+	border: 1px solid black;
+	list-style: none;
+	background: red
+}
+a li {
+	display: block;
+	padding: 5px;  
+    border: 1px solid ;
+}
+
+li a:hover {
+    color: black; 
+     
+}
+
+
+   li:hover ul { 
+    display: block; 
+}
+
+.data {
+	border: 1px solid #000;
+	text-align: center;
+	background: red;
+	margin-right:900px;
+	border: center;
+}
+.form {
+	padding-top: 100px;
+}
+
+
+
+.google_map {
+    position: absolute;
+    display: none;
+    float: right;
+    padding-left: 500px
+
+    }
+
+
+.adress {
+	display: none;
+	position: absolute;
+}  
+
+#map:checked+.google_map,  /*не появляется карта*/
+#curier:checked+.adress {
+    display:inline-flex;
+}
+
+address {
+	text-align: center;
+	background: red;
+}
+
+

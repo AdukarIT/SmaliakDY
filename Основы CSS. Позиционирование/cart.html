@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Форма заказа в интернет-магазине</title>
+		<meta charset='utf-8'>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<img src='image/logo.png' alt='логотип компании' width='300' height='200'>
+		<div class='menu-container'>
+			<ul class='main_menu'>
+				<li class="menu"><a href='#' > Бытовая техника</a>
+					<ul class="submenu">
+						<li><a href='#'>Стиральные машины</a></li>
+						<li><a href='#'>Пылесосы</a></li>
+						<li><a href='#'>Швейные, вышивальные машины</a></li>
+						<li><a href='#'>Утюги</a></li>
+						<li><a href='#'>Электровеники</a></li>
+						<li><a href='#'>Сушилки для обуви</a></li>
+					</ul>
+				</li>
+				<li class="menu"><a href='#'> Техника для кухни</a>
+					<ul class="submenu">
+						<li><a href='#'>Холодильники</a></li>
+						<li><a href='#'>Кухонные плиты</a></li>
+						<li><a href='#'>Морозильники</a></li>
+						<li><a href='#'>Настольные плиты</a></li>
+						<li><a href='#'>Ростеры, мини-печи</a></li>
+						<li><a href='#'>Вытяжки</a></li>
+						<li><a href='#'>Микроволновые печи</a></li>
+					</ul>
+				</li>
+				<li class="menu"><a href='#'> Компьютерная техника</a>
+					<ul class="submenu">
+						<li><a href='#'>Ноутбуки</a></li>
+						<li><a href='#'>Планшеты<a></li>
+						<li><a href='#'>Компьютеры, моноблоки</a></li>
+						<li><a href='#'>Игровые приставки</a></li>
+						<li><a href='#'>Серверное оборудование</a></li>
+					</ul>
+				</li>
+				<li class="menu"><a href='#'>Корзина</a></li>
+			</ul>
+		</div>
+		<div class="form">
+			<h3>Введите Ваши персональные данные:</h3>
+			<form method="post" action="#">
+				<div class='data'>
+					<label>Имя:
+						<input type='text' name='name' placeholder='Ваше имя' required><br>
+					</lable>
+					<label>Фамилия:
+						<input type='text' name='surname' placeholder='Ваша фамилия' required><br>
+					</lable>
+					<label>Email:
+						<input type='email' name='email' placeholder='email@.com' required>
+					</lable><br>
+					<label>Телефон:
+						<input type='tel' name='telephone' placeholder='+37529*******' required>
+					</lable><br>
+				</div>
+				<div>
+					<h3>Выберите способ доставки:</h3>
+					<label>Самовывоз со склада по адресу:
+						<input id='map' type='radio' name='choice' value='выбор' required><br>
+						<div class='google_map'>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2353.4572280155458!2d27.470983550863373!3d53.852517079990506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd080d1e37141%3A0xb9ec7e9886c631a7!2z0YPQuy4g0JrQvtGB0LzQvtC90LDQstGC0L7QsiAzLzMsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1573487298763!5m2!1sru!2sby" width="300" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+						</div>
+					</lable>
+					<label>Курьером по Минску:
+						<input id='curier' type='radio' name='choice' value='выбор' required>
+						<div class='adress'>
+							<input  type='text' name='adress' placeholder='Ваш адрес'><br>
+						</div>
+					</lable>
+					<p><textarea rows='8' cols="45" name='post' placeholder='Введите комментарий к заказу'></textarea></p>
+					<label> Отметка о согласии с порядком обработки персональных данных:
+						<input type='checkbox' name='agree' value='зарегистрироваться' required><br>
+						<input type='submit' name='submit' value='отправить'>
+					</lable>
+				</div>
+			</form>
+		</div>
+		<div id="address">
+			<address>
+				<h3>Адрес магазина</h3>
+				<p><span>Беларуcь, Минск, Ул. Космонавтов д.3, к.3, офис 239</span></p>
+				<p><span>Телефон: Velcom +375 (29) 127 47 91</span></p>
+				<p><span>Skype: xer_lol </span></p>
+				<p><span>E-mail: Crash19985@gmail.com</span></p>
+				<p><span>Рабочие часы: Понедельник-Пятница (10:00 - 19:00)</span></p>
+			</address>
+		</div>
+	</body>
+</html>
